@@ -18,17 +18,22 @@ const Header = () => {
         </a>
       </div>
       <div className="h-10">
-        <div className="w-[39.5rem] border-[#ffffff26] border-2 h-full flex rounded-3xl">
+        <div className="w-[40rem] border-[#ffffff26] border-2 h-full flex rounded-3xl items-center">
+          <div className="w-12 px-3">
+            <img src={search} alt="search" />
+          </div>
           <input
-            className="h-full w-full bg-inherit text-white outline-none focus:outline-blue-500 focus:rounded-l-3xl focus:outline-1 px-5 text-sm"
+            className="h-full w-full bg-inherit text-white outline-none focus:outline-blue-500 focus:rounded-l-3xl focus:outline-1 pl-2 pr-5 text-base"
             type="text"
             placeholder="Search"
           />
-          <img
-            className="py-2 px-5 rounded-r-3xl bg-[#ffffff26]"
-            src={search}
-            alt="search"
-          />
+          <div className="h-full">
+            <img
+              className="px-5 h-full object-contain rounded-r-3xl bg-[#ffffff26]"
+              src={search}
+              alt="search"
+            />
+          </div>
         </div>
       </div>
       <div></div>
