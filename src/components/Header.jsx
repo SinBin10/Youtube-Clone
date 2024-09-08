@@ -7,7 +7,7 @@ const Header = () => {
   const [searchFocus, setSearchFocus] = useState(false);
   console.log(searchFocus);
   return (
-    <div className="flex items-center">
+    <div className="flex items-center justify-between">
       <div className="flex h-14">
         <div className="h-full">
           <img
@@ -21,16 +21,20 @@ const Header = () => {
         </a>
       </div>
       <div className="h-10">
-        <div className="w-[40rem] border-[#ffffff26] border-2 h-full flex rounded-3xl items-center">
+        <div
+          className={`${
+            searchFocus
+              ? "w-[40rem] border-[1px] border-blue-500"
+              : "w-[600px] ml-11"
+          } border-[#ffffff26] border-2 h-full flex rounded-3xl items-center`}
+        >
           {searchFocus && (
             <div className="w-12 px-3">
               <img src={search} alt="search" />
             </div>
           )}
           <input
-            className={`h-full w-full ${
-              searchFocus === false ? "pl-[3.25rem]" : ""
-            } bg-inherit text-white outline-none pl-2 pr-5 text-base`}
+            className="h-full w-full bg-inherit outline-none text-white pl-5 pr-5 text-base"
             type="text"
             placeholder="Search"
             onFocus={() => setSearchFocus(true)}
