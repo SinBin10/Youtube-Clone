@@ -38,7 +38,6 @@ const Header = () => {
               fill="#fff"
             />
           </svg>
-          {/* <img className="h-full" src={logo} alt="youtube logo" /> */}
         </a>
       </div>
       <div className="h-10 flex items-center">
