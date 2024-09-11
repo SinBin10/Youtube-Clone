@@ -1,5 +1,4 @@
 import hamburger from "../assets/Menu.png";
-import logo from "../assets/YouTube-White-Full-Color-Logo.wine.png";
 import search from "../assets/search.png";
 import mic from "../assets/Mic.png";
 import setting from "../assets/image.png";
