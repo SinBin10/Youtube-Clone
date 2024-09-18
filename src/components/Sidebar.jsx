@@ -4,7 +4,7 @@ import user from "../assets/user.png";
 
 const Sidebar = () => {
   return (
-    <div className="w-60 p-3 hover:overflow-y-auto hover:w-[15.9rem]">
+    <div className="p-3 overflow-y-hidden hover:overflow-y-auto w-[18.1rem]">
       <div className="w-full pb-3 border-b-2 border-[#ffffff26]">
         <div className="flex items-center p-2 rounded-xl hover:bg-[#282828] hover:cursor-pointer">
           <img className="h-5 pl-2" src={Hut} alt="home logo" />
@@ -98,8 +98,65 @@ const Sidebar = () => {
           <p className="pl-7">YouTube Kids</p>
         </div>
       </div>
-      <div></div>
-      <div></div>
+      <div className="w-full py-3 border-b-2 border-[#ffffff26]">
+        <div className="flex items-center p-2 rounded-xl hover:bg-[#282828] hover:cursor-pointer">
+          <img className="h-5 pl-2" src={shorts} alt="home logo" />
+          <p className="pl-7">Settings</p>
+        </div>
+        <div className="flex items-center p-2 rounded-xl hover:bg-[#282828] hover:cursor-pointer">
+          <img className="h-5 pl-2" src={shorts} alt="home logo" />
+          <p className="pl-7">Report history</p>
+        </div>
+        <div className="flex items-center p-2 rounded-xl hover:bg-[#282828] hover:cursor-pointer">
+          <img className="h-5 pl-2" src={shorts} alt="home logo" />
+          <p className="pl-7">Help</p>
+        </div>
+        <div className="flex items-center p-2 rounded-xl hover:bg-[#282828] hover:cursor-pointer">
+          <img className="h-5 pl-2" src={shorts} alt="home logo" />
+          <p className="pl-7">Send feedback</p>
+        </div>
+      </div>
+      <div className="p-2 text-sm flex flex-wrap items-center font-semibold text-[#b0b0b0]">
+        <a href="" className="ml-1 mr-1 mt-1">
+          About
+        </a>
+        <a href="" className="ml-1 mr-1 mt-1">
+          Press
+        </a>
+        <a href="" className="ml-1 mr-1 mt-1">
+          Copyright
+        </a>
+        <a href="" className="ml-1 mr-1">
+          Contact Us
+        </a>
+        <a href="" className="ml-1 mr-2">
+          Creators
+        </a>
+        <a href="" className="ml-1 mr-1 mb-3">
+          Advertise
+        </a>
+        <a href="" className="ml-1 mr-7 mb-3">
+          Developers
+        </a>
+        <a href="" className="ml-1">
+          Terms
+        </a>
+        <a href="" className="ml-1">
+          Privacy
+        </a>
+        <a href="" className="ml-1">
+          Policy & Safety
+        </a>
+        <a href="" className="ml-1 mr-1">
+          How YouTube Works
+        </a>
+        <a href="" className="ml-1 mr-1">
+          Test new features
+        </a>
+        <a href="" className="mt-4 mb-3 text-xs text-[#737171]">
+          © 2024 Google LLC
+        </a>
+      </div>
     </div>
   );
 };
