@@ -1,7 +1,8 @@
 import Home from "./pages/Home";
+import Practice from "./pages/Practice";
 
 const App = () => {
-  return <Home />;
+  return <Practice />;
 };
 
 export default App;
